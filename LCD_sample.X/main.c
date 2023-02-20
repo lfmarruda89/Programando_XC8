@@ -1,25 +1,9 @@
-/* 
- * File: example.c
- *
- * Copyright (c) 2015 Manolis Agkopian
- * See the file LICENSE for copying permission.
- *
- * LCD library example code.
- */
-
-// You can change the _XTAL_FREQ if you want, but don't forget to change it in the lcd.c too
 #define _XTAL_FREQ 20000000
-
-// In this example the configuration bits are set specifically for the PIC16F876A, if you use a different microcontroller you may have to update them
-// Tip: MplabX has a tool to easily auto generate the pragma directives (Main Menu, Window -> PIC Memory Views -> Configuration Bits)
-#include "main.h"
-// Flash Program Memory Code Protection bit (Code protection off)
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <xc.h>
-
+#include "main.h"
 #include "lcd.h"
 
 void main ( void ) {
