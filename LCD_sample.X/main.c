@@ -11,10 +11,12 @@ void main ( void ) {
     LCD lcd = { &PORTD, 2, 3, 4, 5, 6, 7}; // PORT, RS, EN, D4, D5, D6, D7
     LCD_Init(lcd);
 
-    LCD_Clear();
-    LCD_Set_Cursor(0,0);
-    LCD_putrs("LUIZ FERNANDO");
     while (1){
+        
+        LCD_Clear();
+        LCD_Set_Cursor(0,0);
+        LCD_putrs("LUIZ FERNANDO");
+        
 		LCD_Set_Cursor(1,0);
 		for ( char c = 'A'; c <= 'P'; c++ ) { 
 			 LCD_putc(c);
